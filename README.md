@@ -55,7 +55,7 @@ You should first update your `npm` and `node` packages to the latest version by 
 `cd` into a desired destination folder, then clone the repo (preferably using SSH):
 
 ```shell
-git clone git@github.com:hcs-t4sg/s25-eng-r2-deliverable.git
+git clone git@github.com:hcs-t4sg/f25-eng-r2-deliverable.git
 ```
 
 #### Package installation
@@ -64,7 +64,7 @@ git clone git@github.com:hcs-t4sg/s25-eng-r2-deliverable.git
 
    ```bash
    # Navigate into the project directory
-   cd s25-eng-r2-deliverable
+   cd f25-eng-r2-deliverable
 
    # Open in VSCode
    code .
@@ -78,9 +78,9 @@ git clone git@github.com:hcs-t4sg/s25-eng-r2-deliverable.git
 3. Run: `npm install` (`npm i` for short)
 
    - If you get something like "command not found", you might not have `npm` installed.
-   - Make sure you're running `npm install` inside the project directory. That is, your terminal should indicate you're inside the `s25-eng-r2-deliverable` directory. If you're using MacOS (with a `zsh` terminal), this probably looks something like:
+   - Make sure you're running `npm install` inside the project directory. That is, your terminal should indicate you're inside the `f25-eng-r2-deliverable` directory. If you're using MacOS (with a `zsh` terminal), this probably looks something like:
      ```bash
-     username@some-address s25-eng-r2-deliverable % npm install
+     username@some-address f25-eng-r2-deliverable % npm install
      ```
 
 - If successful you should see something like:
