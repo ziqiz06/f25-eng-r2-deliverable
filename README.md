@@ -1,4 +1,4 @@
-# T4SG Spring 2025 Application Deliverable
+# T4SG Fall 2025 Application Deliverable
 
 - [T4SG Spring 2025 Application Deliverable](#t4sg-spring-2025-application-deliverable)
   - [Introduction](#introduction)
