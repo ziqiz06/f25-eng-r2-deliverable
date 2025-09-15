@@ -106,9 +106,9 @@ git clone git@github.com:hcs-t4sg/f25-eng-r2-deliverable.git
 
 2. There is a `.env.example` file in your local project directory (e.g. in VSCode). Duplicate it (into the same directory) and rename to `.env`. Inside `.env`, set the following variables according to your Supabase project settings:
 
-   - `NEXT_PUBLIC_SUPABASE_URL`: From Project Settings > API > Project URL.
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: From Project Settings > API > Project API Keys > `anon` `public`.
-   - `SECRET_SUPABASE_CONNECTION_STRING`: From Project Settings > Database > Connection String > Nodejs. Replace `[YOUR-PASSWORD]` with your database password.
+   - `NEXT_PUBLIC_SUPABASE_URL`: From Project Settings > Data API > Project URL.
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: From Project Settings > API Keys > Legacy API Keys > `anon` `public`.
+   - `SECRET_SUPABASE_CONNECTION_STRING`: Project Overview > Connect (in the nav bar)> Direct connection. Replace `[YOUR-PASSWORD]` with your database password.
      - If you insist on using special characters in your password you will need to replace them with the **percent-encoded** version ([see this reference](https://stackoverflow.com/a/76551917))
 
    The final result should look something like this:
@@ -124,7 +124,7 @@ git clone git@github.com:hcs-t4sg/f25-eng-r2-deliverable.git
 
 #### Supabase Database Setup
 
-1. In your Supabase project dashboard, navigate to `SQL Editor` in the left sidebar, then click `(+) New Query` > `New blank query`. If you wish, you can rename the query from "Untitled Query" to something else by clicking the dropdown in the left sidebar.
+1. In your Supabase project dashboard, navigate to `SQL Editor` in the left sidebar, then click `(+) New Query` > `New blank query` or type the follwoing directly into the already opened editor. If you wish, you can rename the query from "Untitled Query" to something else by clicking the dropdown in the left sidebar.
 2. In your starter code, there is a `setup.sql` file containing a SQL script that will set up the database for you. Copy the entire contents of the file and paste it into your new query.
 3. Run the query with the button in the bottom right or by pressing `cmd` + `return`. In the results panel, you should see the message `Success. No rows returned`. If you're having issues with this, contact Eli and Itzel (the directors of engineering)!
 
