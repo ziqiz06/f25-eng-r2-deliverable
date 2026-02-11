@@ -31,9 +31,9 @@ export default function SpeciesChatbot() {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: "Bearer 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",
           "Content-Type": "application/json",
-          "HTTP-Referer": "http://localhost:3000", // Replace with your actual domain
+          "HTTP-Referer": "http://localhost:3000",
           "X-Title": "Species Chatbot",
         },
         body: JSON.stringify({

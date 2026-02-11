@@ -8,6 +8,8 @@ export default async function LoginPage() {
   const {
     data: { session },
   } = await supabase.auth.getSession();
+  const sessionId = session?.user?.id;
+  console.log("login sessionId:", sessionId);
 
   if (session) {
     // Users who are already signed in should be redirected to species page

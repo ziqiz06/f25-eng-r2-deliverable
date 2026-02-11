@@ -10,7 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Form} from "@/components/ui/form";
+import { Form } from "@/components/ui/form";
 import { toast } from "@/components/ui/use-toast";
 import { createBrowserSupabaseClient } from "@/lib/client-utils";
 import type { Database } from "@/lib/schema";
@@ -96,10 +96,7 @@ export default function DeleteSpeciesDialog({ species }: { species: Species }) {
   const onSubmit = async () => {
     // The `input` prop contains data that has already been processed by zod. We can now use it in a supabase query
     const supabase = createBrowserSupabaseClient();
-    const { error } = await supabase
-      .from("species")
-      .delete()
-      .eq("id", species.id);
+    const { error } = await supabase.from("species").delete().eq("id", species.id);
 
     // Catch and report errors from Supabase and exit the onSubmit function with an early 'return' if an error occurred.
     if (error) {
@@ -131,16 +128,14 @@ export default function DeleteSpeciesDialog({ species }: { species: Species }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="link" className="h-auto justify-start p-0 text-sm text-blue-600 underline hover:text-blue-800">
+        <Button variant="destructive" size="sm">
           Delete
         </Button>
       </DialogTrigger>
       <DialogContent className="max-h-screen overflow-y-auto sm:max-w-[600px]">
         <DialogHeader>
           <DialogTitle>Delete Species</DialogTitle>
-          <DialogDescription>
-            If you are sure, click &quot;Delete Species&quot;.
-          </DialogDescription>
+          <DialogDescription>If you are sure, click &quot;Delete Species&quot;.</DialogDescription>
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={(e: BaseSyntheticEvent) => void form.handleSubmit(onSubmit)(e)}>
